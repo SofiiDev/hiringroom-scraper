@@ -128,15 +128,4 @@ async def get_jobs(
 
     empresas_con_resultados = len(set(j.empresa for j in all_jobs))
     return SearchResult(total=len(all_jobs), empresas=empresas_con_resultados, jobs=all_jobs)
-```
 
----
-
-### `requirements.txt`
-```
-fastapi==0.115.5
-uvicorn[standard]==0.32.1
-httpx==0.27.2
-beautifulsoup4==4.12.3
-lxml==5.3.0
-pydantic==2.10.3
